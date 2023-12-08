@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import NavItem from "./NavItem";
+import { Logo } from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-row justify-end">
-      <div className="md:hidden cursor-pointer z-30">
+    <nav className="flex flex-row justify-end ">
+      <div className="md:hidden cursor-pointer z-50">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -23,7 +24,11 @@ const Navbar = () => {
         </svg>
       </div>
 
-      <div className="fixed left-0 top-0 h-full bg-[#111111] p-4 md:block hidden flex-col">
+      <div className="fixed left-0 top-0 h-full bg-[#111111] w-32 md:block hidden flex-col">
+        <div className="flex ml-3 my-10 justify-center items-center">
+          <Logo />
+        </div>
+
         <NavItem />
         <NavItem />
         <NavItem />

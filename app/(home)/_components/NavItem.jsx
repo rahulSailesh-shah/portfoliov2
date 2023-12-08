@@ -8,7 +8,7 @@ const NavItem = () => {
         // onClick={() => handleItemClick(value)}
       >
         Home
-        <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-[#00b3ea] scale-0 transition-transform duration-300 group-hover:scale-100"></span>
+        <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1 bg-[rgb(110,146,243)] scale-0 transition-transform duration-300 group-hover:scale-100"></span>
       </div>
     </div>
   );
