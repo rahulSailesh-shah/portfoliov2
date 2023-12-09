@@ -1,19 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import Heading from "../_components/Heading";
 
 const Work = () => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col items-center mt-20 w-fit">
         <div className="flex items-center self-start mb-20 ml-20">
-          <Image
-            height={60}
-            width={30}
-            src="./vector.svg"
-            alt="logo"
-            className="w-20 h-20 mr-4"
-          />
-          <h1 className="text-[#6E92F3] font-medium ">Work Experience</h1>
+          <Heading text="Work Experience" />
         </div>
         <div className="flex">
           <div className="flex h-40 items-center relative">
