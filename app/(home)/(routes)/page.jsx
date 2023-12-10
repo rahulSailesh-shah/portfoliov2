@@ -1,5 +1,6 @@
 import ThreeDModel from "../_components/ThreeDModel";
 import About from "../_pages/About";
+import Education from "../_pages/Education";
 import Header from "../_pages/Header";
 import Project from "../_pages/Project";
 import Skills from "../_pages/Skills";
@@ -13,6 +14,7 @@ export default function Home() {
       <Work />
       <Project />
       <Skills />
+      <Education />
     </main>
   );
 }

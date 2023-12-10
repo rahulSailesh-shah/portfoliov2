@@ -42,7 +42,7 @@ const Project = () => {
       </div>
 
       <div className="ml-60 w-fit">
-        <div className="w-fit flex justify-around mt-48 ">
+        <div className="w-fit flex justify-around mt-12 ">
           <div className="w-[32rem]">
             <Heading text="02" />
             <h1 className="text-4xl font-semibold mb-6 text-white">

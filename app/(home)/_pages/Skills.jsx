@@ -11,7 +11,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="flex ml-32  overflow-hidden justify-center mb-24">
+    <div className="flex ml-32  overflow-hidden justify-center mb-40 mt-40">
       <div className="w-[42rem] h-[24rem] bg-[#1e1e1e] rounded-md">
         <p className="text-white py-4 pl-4 pr-32">{skill}</p>
       </div>
