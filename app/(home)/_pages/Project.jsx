@@ -5,6 +5,7 @@ import ThreedDPhone from "../_components/ThreedDPhone";
 import Image from "next/image";
 import Heading from "../_components/Heading";
 import ThreeDMac from "../_components/ThreeDMac";
+import IconButton from "../_components/IconButton";
 
 const Project = () => {
   return (
@@ -25,6 +26,17 @@ const Project = () => {
               debitis est omnis nemo sapiente consequatur recusandae nesciunt
               aliquam voluptates amet?
             </p>
+            <div className="text-[#6E92F3] text-sm mt-4">
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>
+            </div>
+
+            <div className="flex mt-4">
+              <IconButton text="View Project" type="external" />
+              <IconButton text="Github" type="Github" />
+            </div>
           </div>
         </div>
       </div>
@@ -41,6 +53,17 @@ const Project = () => {
               debitis est omnis nemo sapiente consequatur recusandae nesciunt
               aliquam voluptates amet?
             </p>
+            <div className="text-[#6E92F3] text-sm mt-4">
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>
+            </div>
+
+            <div className="flex mt-4">
+              <IconButton text="View Project" type="external" />
+              <IconButton text="Github" type="Github" />
+            </div>
           </div>
           <div className=" top-0">
             <ThreeDMac version={2} />
@@ -64,6 +87,17 @@ const Project = () => {
               debitis est omnis nemo sapiente consequatur recusandae nesciunt
               aliquam voluptates amet?
             </p>
+            <div className="text-[#6E92F3] text-sm mt-4">
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>{" "}
+              <span className="mr-4">React</span>
+            </div>
+
+            <div className="flex mt-4">
+              <IconButton text="View Project" type="external" />
+              <IconButton text="Github" type="Github" />
+            </div>
           </div>
         </div>
       </div>
