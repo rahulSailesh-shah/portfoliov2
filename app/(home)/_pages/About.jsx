@@ -5,10 +5,13 @@ import Heading from "../_components/Heading";
 
 const About = () => {
   return (
-    <div className="text-white mt-20 flex ml-32 justify-around px-20 ">
-      <div className="text-[#cdcdcd] w-2/5 ">
+    <div className="text-white lg:mt-20 flex lg:flex-row flex-col lg:ml-32 justify-around lg:px-20 px-6">
+      <div className="lg:hidden mb-8 ml-2">
+        <Heading text="About Me" />
+      </div>
+      <div className="text-[#cdcdcd] lg:w-2/5 ">
         <h1 className="text-4xl font-semibold mb-10 text-white">Hi There</h1>
-        <p className="text-[#cdcdcd] text-xl leading-8 mb-10">
+        <p className="text-[#cdcdcd] lg:text-xl lg:leading-8 lg:mb-10 mb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
           asperiores, pariatur reprehenderit earum eaque harum, molestiae rerum
           sint alias repudiandae aliquam quae aliquid voluptatibus nesciunt!
@@ -16,7 +19,7 @@ const About = () => {
           maxime corporis repudiandae alias dicta ratione aut quaerat blanditiis
           temporibus esse illo deserunt. Recusandae, velit?
         </p>
-        <p className="text-[#cdcdcd] text-xl leading-8 mb-10">
+        <p className="text-[#cdcdcd] lg:text-xl lg:leading-8 lg:mb-10 mb-4">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto soluta
           maiores voluptas placeat? Vero corporis pariatur maxime, dolorum
           recusandae excepturi! Vero nobis officiis eum nostrum cumque harum,
@@ -29,8 +32,11 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-2/5 mt-60">
-        <Heading text="About Me" />
+      <div className="lg:w-2/5 lg:mt-60 mt-12">
+        <div className="lg:block hidden">
+          <Heading text="About Me" />
+        </div>
+
         <div className=" h-[40rem] bg-[rgb(126,126,126)]"></div>
       </div>
     </div>

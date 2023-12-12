@@ -44,7 +44,7 @@ const Contact = () => {
           </label>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-20">
           <button className="bg-[#6E92F3] w-full inline-block px-10 py-3 hover:bg-[rgb(84,114,194)] transition-hover duration-200  rounded-md text-lg font-medium text-[#111111]">
             Send Message
           </button>

@@ -16,7 +16,7 @@ const Header = () => {
   }, [inView]);
 
   return (
-    <main className="bg-[#111111] h-screen ml-32 overflow-hidden">
+    <main className="bg-[#111111] h-screen lg:ml-32 overflow-hidden">
       <div className="relative w-full">
         <div className="lg:block hidden absolute right-0 -top-80 ">
           <ThreeDModel />
@@ -24,25 +24,25 @@ const Header = () => {
       </div>
 
       <div className="flex flex-col justify-center h-full ml-8 ">
-        <div className="w-[56rem] pr-12 ">
-          <h1 className="mb-4">
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">R</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">A</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">H</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">U</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-6">L</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">S</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">H</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">A</span>
-            <span className="text-3xl font-medium text-[#cdcdcd] pr-2">H</span>
+        <div className="lg:w-[56rem] pr-12 ">
+          <h1 className="mb-4 lg:text-3xl text-xl">
+            <span className=" font-medium text-[#cdcdcd] pr-2">R</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">A</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">H</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">U</span>
+            <span className=" font-medium text-[#cdcdcd] pr-6">L</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">S</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">H</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">A</span>
+            <span className=" font-medium text-[#cdcdcd] pr-2">H</span>
           </h1>
-          <h1 className="text-[#cdcdcd] text-6xl font-light ">
+          <h1 className="text-[#cdcdcd] lg:text-6xl text-4xl font-light ">
             I am a{" "}
             <span className="font-semibold text-[#6E92F3]">
               Full Stack Developer
             </span>{" "}
           </h1>
-          <p className="text-[#cdcdcd] mt-4 text-xl leading-8">
+          <p className="text-[#cdcdcd] mt-4 lg:text-xl lg:leading-8">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
             quidem voluptatibus sunt optio, sequi molestiae itaque. Doloremque
             qui sequi repellendus.
