@@ -3,7 +3,7 @@ import Heading from "../_components/Heading";
 
 const Contact = () => {
   return (
-    <div class="max-w-md mx-auto my-auto w-screen h-screen flex justify-center items-center">
+    <div class="max-w-md mx-auto my-auto w-screen h-screen flex justify-center items-center px-4">
       <div className="w-[30rem]">
         <div className="flex justify-center mb-12">
           <Heading text="Say Hello" />
