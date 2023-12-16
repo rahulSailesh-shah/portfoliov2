@@ -10,13 +10,14 @@ import IconButton from "../_components/IconButton";
 const Project = () => {
   return (
     <div className="flex flex-col relative">
-      <div className="lg:ml-48">
+      <div className="lg:ml-48 px-4">
         <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-48 ">
-          <div className=" top-0 lg:left-20 left-0">
+          <div className="lg:block hidden top-0 lg:left-20 left-0">
             <ThreeDMac version={1} />
           </div>
+          <div className="lg:hidden block w-full h-80 bg-gray-600"></div>
 
-          <div className="lg:w-[32rem] w-full px-4">
+          <div className="lg:w-[32rem] w-full ">
             <Heading text="01" />
             <h1 className="lg:text-4xl text-2xl text font-semibold mb-6 text-white">
               Project Title
@@ -41,12 +42,10 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="lg:ml-60 lg:w-fit w-full">
+      <div className="lg:ml-60 lg:w-fit w-full px-4">
         <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-12 ">
-          <div className=" lg:hidden top-0">
-            <ThreeDMac version={2} />
-          </div>
-          <div className="lg:w-[32rem] w-full px-4">
+          <div className="lg:hidden block w-full h-80 bg-gray-600"></div>
+          <div className="lg:w-[32rem] w-full ">
             <Heading text="02" />
             <h1 className="lg:text-4xl text-2xl text font-semibold mb-6 text-white">
               Project Title
@@ -74,18 +73,19 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="ml-96">
-        <div className="w-fit flex justify-around mt-24 ">
-          <div className=" top-0 left-20">
+      <div className="lg:ml-96 px-4">
+        <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-24 ">
+          <div className="lg:block hidden top-0 left-20">
             <ThreedDPhone />
           </div>
 
-          <div className="w-[32rem] ml-24">
+          <div className="lg:hidden block w-full h-80 bg-gray-600"></div>
+          <div className="lg:w-[32rem] w-full lg:ml-24">
             <Heading text="03" />
-            <h1 className="text-4xl font-semibold mb-6 text-white">
+            <h1 className="lg:text-4xl text-2xl text font-semibold mb-6 text-white">
               Project Title
             </h1>
-            <p className="p-1 text-lg text-[#cdcdcd]">
+            <p className="p-1 lg:text-lg text-[#cdcdcd]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
               debitis est omnis nemo sapiente consequatur recusandae nesciunt
               aliquam voluptates amet?
