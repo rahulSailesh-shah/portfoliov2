@@ -13,6 +13,7 @@
     "@splinetool/runtime": "^0.9.518",
     "framer-motion": "^10.16.15",
     "next": "14.0.3",
+    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
