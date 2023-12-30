@@ -3,6 +3,7 @@
 import Image from "next/image";
 import NavItem from "./NavItem";
 import { Logo } from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 const Navbar = () => {
   return (
@@ -24,15 +25,22 @@ const Navbar = () => {
         </svg>
       </div>
 
-      <div className="fixed left-0 top-0 h-full bg-[#111111] w-32 md:block hidden flex-col">
-        <div className="flex ml-3 my-10 justify-center items-center">
-          <Logo />
+      <div className="fixed left-0 top-0 h-full bg-[#111111] w-32 md:flex hidden flex-col justify-between ">
+        <div>
+          <div className="flex ml-3 my-10 justify-center items-center">
+            <Logo />
+          </div>
+          <div className="flex flex-col">
+            <NavItem />
+            <NavItem />
+            <NavItem />
+            <NavItem />
+          </div>
         </div>
 
-        <NavItem />
-        <NavItem />
-        <NavItem />
-        <NavItem />
+        <div className="">
+          <SocialLinks />
+        </div>
       </div>
     </nav>
   );
