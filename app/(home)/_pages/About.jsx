@@ -1,11 +1,27 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import Button from "../_components/Button";
 import Heading from "../_components/Heading";
+import { useScroll, motion } from "framer-motion";
 
 const About = () => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0.9 1"],
+  });
+
   return (
-    <div className="text-white lg:mt-20 flex lg:flex-row flex-col lg:ml-32 justify-around lg:px-20 px-6">
+    <motion.div
+      ref={ref}
+      style={{
+        opacity: scrollYProgress,
+      }}
+      className="text-white lg:mt-20 flex lg:flex-row flex-col lg:ml-32 justify-around lg:px-20 px-6"
+    >
       <div className="lg:hidden mb-8 ml-2">
         <Heading text="About Me" />
       </div>
@@ -39,7 +55,7 @@ const About = () => {
 
         <div className=" h-[40rem] bg-[rgb(126,126,126)]"></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

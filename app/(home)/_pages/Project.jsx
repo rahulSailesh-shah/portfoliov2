@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
+import { useScroll, motion } from "framer-motion";
 import ThreedDPhone from "../_components/ThreedDPhone";
 import Image from "next/image";
 import Heading from "../_components/Heading";
@@ -8,9 +9,28 @@ import ThreeDMac from "../_components/ThreeDMac";
 import IconButton from "../_components/IconButton";
 
 const Project = () => {
+  const project1Ref = useRef(null);
+  const project2Ref = useRef(null);
+  const project3Ref = useRef(null);
+
+  const yProgress = (ref) => {
+    const { scrollYProgress } = useScroll({
+      target: ref,
+      offset: ["0 1", "1.1 1"],
+    });
+
+    return scrollYProgress;
+  };
+
   return (
     <div className="flex flex-col relative">
-      <div className="lg:ml-48 px-4">
+      <motion.div
+        ref={project1Ref}
+        style={{
+          opacity: yProgress(project1Ref),
+        }}
+        className="lg:ml-48 px-4"
+      >
         <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-48 ">
           <div className="lg:block hidden top-0 lg:left-20 left-0">
             <ThreeDMac version={1} />
@@ -40,9 +60,15 @@ const Project = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="lg:ml-60 lg:w-fit w-full px-4">
+      <motion.div
+        ref={project2Ref}
+        style={{
+          opacity: yProgress(project2Ref),
+        }}
+        className="lg:ml-60 lg:w-fit w-full px-4"
+      >
         <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-12 ">
           <div className="lg:hidden block w-full h-80 bg-gray-600"></div>
           <div className="lg:w-[32rem] w-full ">
@@ -71,9 +97,15 @@ const Project = () => {
             <ThreeDMac version={2} />
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="lg:ml-96 px-4">
+      <motion.div
+        ref={project3Ref}
+        style={{
+          opacity: yProgress(project3Ref),
+        }}
+        className="lg:ml-96 px-4"
+      >
         <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-24 ">
           <div className="lg:block hidden top-0 left-20">
             <ThreedDPhone />
@@ -103,7 +135,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

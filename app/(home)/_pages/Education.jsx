@@ -1,10 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
+import { useScroll, motion } from "framer-motion";
+
 import Heading from "../_components/Heading";
 
 const Education = () => {
+  const edu1Ref = useRef(null);
+  const edu2Ref = useRef(null);
+
+  const yProgress = (ref) => {
+    const { scrollYProgress } = useScroll({
+      target: ref,
+      offset: ["0 1", "1.1 1"],
+    });
+
+    return scrollYProgress;
+  };
+
   return (
     <div className=" lg:ml-32 overflow-hidden mb-40 lg:mt-80 mt-40 px-4">
-      <div className="flex lg:flex-row flex-col justify-center mb-16">
+      <motion.div
+        ref={edu1Ref}
+        style={{
+          opacity: yProgress(edu1Ref),
+        }}
+        className="flex lg:flex-row flex-col justify-center mb-16"
+      >
         <div className="lg:w-[40rem] w-full h-[30rem] bg-[#1e1e1e] rounded-md"></div>
         <div className="lg:w-[30rem] w-full h-[30rem] lg:relative">
           <div className="p-4 mb-4">
@@ -34,9 +56,15 @@ const Education = () => {
             <p className="text-xl font-semibold text-[#6E92F3]">GPA: 4.0</p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex lg:flex-row flex-col-reverse justify-center">
+      <motion.div
+        ref={edu2Ref}
+        style={{
+          opacity: yProgress(edu2Ref),
+        }}
+        className="flex lg:flex-row flex-col-reverse justify-center"
+      >
         <div className="lg:w-[30rem] w-full h-[30rem]  relative">
           <div className="p-4 mb-4">
             <div className="flex items-end justify-start -mb-4">
@@ -67,7 +95,7 @@ const Education = () => {
         </div>
 
         <div className="lg:w-[40rem] w-full h-[30rem] bg-[#1e1e1e] rounded-md"></div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,10 +1,25 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
+import { useScroll, motion } from "framer-motion";
+
 import Heading from "../_components/Heading";
 
 const Work = () => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "0.9 1"],
+  });
   return (
-    <div className="flex justify-center">
+    <motion.div
+      ref={ref}
+      style={{
+        opacity: scrollYProgress,
+      }}
+      className="flex justify-center"
+    >
       <div className="flex flex-col items-center mt-20 w-full md:w-fit">
         <div className="flex items-center self-start lg:mb-20 mb-8 lg:ml-20 ml-6">
           <Heading text="Work Experience" />
@@ -110,7 +125,7 @@ const Work = () => {
           </ol>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
