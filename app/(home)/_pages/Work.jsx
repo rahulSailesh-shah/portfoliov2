@@ -18,6 +18,7 @@ const Work = () => {
       style={{
         opacity: scrollYProgress,
       }}
+      id="work"
       className="flex justify-center"
     >
       <div className="flex flex-col items-center mt-20 w-full md:w-fit">

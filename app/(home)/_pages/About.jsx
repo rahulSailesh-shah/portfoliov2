@@ -16,6 +16,7 @@ const About = () => {
 
   return (
     <motion.div
+      id="about"
       ref={ref}
       style={{
         opacity: scrollYProgress,
@@ -44,7 +45,7 @@ const About = () => {
         </p>
 
         <div className="mt-10">
-          <Button text="Send me a message" />
+          <Button text="Send me a message" to="contact" />
         </div>
       </div>
 

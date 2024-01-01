@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
   }, []);
 
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <head>
         <title>Rahul Shah | Full Stack Developer </title>
       </head>

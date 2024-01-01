@@ -16,7 +16,7 @@ const Header = () => {
   }, [inView]);
 
   return (
-    <main className="bg-[#111111] h-screen lg:ml-32 overflow-hidden">
+    <main id="home" className="bg-[#111111] h-screen lg:ml-32 overflow-hidden">
       <div className="relative w-full">
         <div className="lg:block hidden absolute right-0 -top-80 ">
           <ThreeDModel />
@@ -48,7 +48,7 @@ const Header = () => {
             qui sequi repellendus.
           </p>
           <div className="mt-10">
-            <Button text="Contact Me" />
+            <Button text="Contact Me" to="contact" />
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Project = () => {
   };
 
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative" id="projects">
       <motion.div
         ref={project1Ref}
         style={{

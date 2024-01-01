@@ -28,6 +28,7 @@ const Contact = () => {
 
   return (
     <motion.div
+      id="contact"
       ref={ref}
       style={{
         opacity: scrollYProgress,
