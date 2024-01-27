@@ -49,12 +49,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="lg:w-2/5 lg:mt-60 mt-12">
+      <div className="lg:w-2/5 mt-12 lg:mt-40">
         <div className="lg:block hidden">
           <Heading text="About Me" />
         </div>
 
-        <div className=" h-[40rem] bg-[rgb(126,126,126)]"></div>
+        <div className=" h-[40rem] bg-[rgb(126,126,126)] relative overflow-hidden rounded-md">
+          <Image src="/me3.jpg" layout="fill" objectFit="cover" alt="logo" />
+        </div>
       </div>
     </motion.div>
   );

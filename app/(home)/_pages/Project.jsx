@@ -2,11 +2,11 @@
 
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
-import ThreedDPhone from "../_components/ThreedDPhone";
-import Image from "next/image";
+import ThreedDPhone from "../_components/ThreeDPhone";
 import Heading from "../_components/Heading";
-import ThreeDMac from "../_components/ThreeDMac";
 import IconButton from "../_components/IconButton";
+import ThreeDMac from "../_components/ThreeDMac";
+import ThreeDPhone from "../_components/ThreeDPhone";
 
 const Project = () => {
   const project1Ref = useRef(null);
@@ -108,7 +108,7 @@ const Project = () => {
       >
         <div className="lg:w-fit w-full flex lg:flex-row flex-col justify-around mt-24 ">
           <div className="lg:block hidden top-0 left-20">
-            <ThreedDPhone />
+            <ThreeDPhone />
           </div>
 
           <div className="lg:hidden block w-full h-80 bg-gray-600"></div>

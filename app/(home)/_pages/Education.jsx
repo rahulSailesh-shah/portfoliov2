@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 
 import Heading from "../_components/Heading";
+import Image from "next/image";
 
 const Education = () => {
   const edu1Ref = useRef(null);
@@ -27,7 +28,9 @@ const Education = () => {
         }}
         className="flex lg:flex-row flex-col justify-center mb-16"
       >
-        <div className="lg:w-[40rem] w-full h-[30rem] bg-[#1e1e1e] rounded-md"></div>
+        <div className="lg:w-[40rem] w-full h-[30rem] bg-[#1e1e1e] rounded-md relative overflow-hidden">
+          <Image src="/ASU.jpg" layout="fill" objectFit="cover" alt="logo" />
+        </div>
         <div className="lg:w-[30rem] w-full h-[30rem] lg:relative">
           <div className="p-4 mb-4">
             <div className="flex items-end lg:justify-end -mb-4">
@@ -75,7 +78,7 @@ const Education = () => {
             </h1>
           </div>
 
-          <div className=" lg:w-[32rem] w-full h-fit lg:absolute left-0 justify-end bg-[#6E92F3] flex flex-col self-end px-8 py-8 rounded-md">
+          <div className=" lg:w-[32rem] w-full h-fit lg:absolute left-0 justify-end bg-[#6E92F3] flex flex-col self-end px-8 py-8 rounded-md z-10">
             <h1 className="self-start text-lg font-semibold mb-2 text-[#111111]">
               Courses
             </h1>
@@ -94,7 +97,9 @@ const Education = () => {
           </div>
         </div>
 
-        <div className="lg:w-[40rem] w-full h-[30rem] bg-[#1e1e1e] rounded-md"></div>
+        <div className="lg:w-[40rem] w-full h-[30rem] bg-[#1e1e1e] relative rounded-md overflow-hidden">
+          <Image src="/SDM.jpeg" layout="fill" objectFit="cover" alt="logo" />
+        </div>
       </motion.div>
     </div>
   );

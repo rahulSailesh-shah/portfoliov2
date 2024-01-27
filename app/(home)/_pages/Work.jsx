@@ -25,9 +25,18 @@ const Work = () => {
         <div className="flex items-center self-start lg:mb-20 mb-8 lg:ml-20 ml-6">
           <Heading text="Work Experience" />
         </div>
-        <div className="flex justify-center items-center w-full">
+
+        {/* Second section with similar modifications */}
+        <div className="flex w-full">
           <div className="lg:flex hidden h-40 items-center relative">
-            <div className="w-40 h-40 bg-blue-500 rounded-md"></div>
+            <div className="w-40 h-40 bg-white rounded-md relative overflow-hidden">
+              <Image
+                src="/asulogo.png"
+                layout="fill"
+                objectFit="cover"
+                alt="logo"
+              />
+            </div>
             <div className="w-20 h-px bg-gray-700"></div>
             <span className="absolute -right-3 w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-[#6E92F3] z-50"></span>
           </div>
@@ -76,9 +85,16 @@ const Work = () => {
         </div>
 
         {/* Second section with similar modifications */}
-        <div className="flex justify-center items-center w-full">
+        <div className="flex w-full">
           <div className="lg:flex hidden h-40 items-center relative">
-            <div className="w-40 h-40 bg-blue-500 rounded-md"></div>
+            <div className="w-40 h-40 bg-blue-500 rounded-md relative overflow-hidden">
+              <Image
+                src="/allegion.png"
+                layout="fill"
+                objectFit="cover"
+                alt="logo"
+              />
+            </div>
             <div className="w-20 h-px bg-gray-700"></div>
             <span className="absolute -right-3 w-6 h-6 bg-blue-100 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-[#6E92F3] z-50"></span>
           </div>
